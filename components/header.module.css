@@ -1,0 +1,75 @@
+/* :root {
+    --black: #343432;
+    --black2: #2C2E43;
+    --blaack: #000000;
+    --darkGray: #595260;
+    --lightGray: #B2B1B9;
+    --yellow: #FFD523;
+} */
+
+.button {
+    color: #FFD523;
+    cursor: pointer;
+    font-size:16px;
+    line-height: 10vh;
+    text-align:center;
+    max-width: 20vw; 
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 25vw; 
+    background: transparent;
+    font-weight: 100;
+    transition: all 1s linear;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #343432;
+}
+
+.svg {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0; 
+    width: 100%; 
+    }
+    
+.rect {
+    fill: none;
+    stroke-width: 5;
+    stroke-dasharray: 15, 310;
+    stroke-dashoffset: 48;
+    transition: all 0.35s linear;
+}
+
+.button:hover {
+    border:none;
+    font-weight: 900;
+    letter-spacing: 1px;
+    box-shadow: 0px 0px 10px #FFD523;
+}
+
+.button:hover rect {
+    stroke: #FFD523;
+    stroke-width: 2;
+    stroke-dasharray: 422, 0;
+    transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+    }
+
+.rows {
+    flex-direction:row;
+    display:flex;
+    padding-left:3vw;
+    padding-right:3vw;
+    padding-top:3vh;
+    padding-bottom:3vh;
+    justify-content:center;
+    align-items:center;
+}   
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:100vw;
+}
