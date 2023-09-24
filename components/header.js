@@ -1,40 +1,41 @@
 import styles from './header.module.css';
+import Link from 'next/link';
 
 export default function HeaderComponent() {
     return (
         <div className={styles.container}>
-            <h1>Imagine Software</h1>
+            <h1 className={styles.title}>Imagine Software</h1>
             <div className={styles.rows}>
-                <a href="/" className={styles.button}>
+                <Link href="/" className={styles.button}>
                     <svg className={styles.svg}>
                         <rect className={styles.rect} x="0" y="0" fill="none" width="100%" height="100%"/>
                     </svg>
                     Home 
-                </a>
-                <a href="/about" className={styles.button}>
+                </Link>
+                <Link href="/board" className={styles.button}>
                     <svg className={styles.svg}>
                         <rect className={styles.rect} x="0" y="0" fill="none" width="100%" height="100%"/>
                     </svg>
-                    About Us 
-                </a>
-                <a href="/" className={styles.button}>
+                    Board 
+                </Link>
+                <Link href="/alumni" className={styles.button}>
                     <svg className={styles.svg}>
                         <rect className={styles.rect} x="0" y="0" fill="none" width="100%" height="100%"/>
                     </svg>
-                    Comming Soon
-                </a>
-                <a href="/" className={styles.button}>
+                    Alumni
+                </Link>
+                <Link href="/leaderboard" className={styles.button}>
                     <svg className={styles.svg}>
                         <rect className={styles.rect} x="0" y="0" fill="none" width="100%" height="100%"/>
                     </svg>
-                    Comming Soon
-                </a>
-                <a href="/" className={styles.button}>
+                    Ping Pong
+                </Link>
+                <Link href="/portfolio" className={styles.button}>
                     <svg className={styles.svg}>
                         <rect className={styles.rect} x="0" y="0" fill="none" width="100%" height="100%"/>
                     </svg>
-                    Comming Soon
-                </a>
+                    Portfolio
+                </Link>
             </div>
         </div>
     )}
