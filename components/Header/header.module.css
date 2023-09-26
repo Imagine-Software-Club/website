@@ -1,29 +1,23 @@
-/* :root {
-    --black: #343432;
-    --black2: #2C2E43;
-    --blaack: #000000;
-    --darkGray: #595260;
-    --lightGray: #B2B1B9;
-    --yellow: #FFD523;
-} */
-
 .button {
-    color: #FFD523;
+    color: var(--yellow);
     cursor: pointer;
     font-size:16px;
     line-height: 10vh;
     text-align:center;
-    max-width: 19vw; 
+    max-width: 17vw; 
     position: relative;
     text-decoration: none;
     text-transform: uppercase;
-    width: 19vw; 
+    width: 17vw; 
     background: transparent;
     font-weight: 100;
     transition: all 1s linear;
     border-style: solid;
     border-width: 2px;
-    border-color: #343432;
+    border-color: transparent;
+
+    font-family: 'alliance', sans-serif;
+    font-weight: 400;
 }
 
 .svg {
@@ -59,21 +53,24 @@
 .rows {
     flex-direction:row;
     display:flex;
-    /* padding-left:3vw;
+    padding-left:3vw;
     padding-right:3vw;
-    padding-top:3vh;
-    padding-bottom:3vh; */
+    /* padding-top:3vh;
+    padding-bottom:3vh;  */
     justify-content:center;
     align-items:center;
 }   
 
 .container {
-    display: flex;
-    flex-direction: column;
+    position: absolute;
     align-items: center;
-    width:100vw;
+    width:100%;
 }
 
 .title {
-    color: #FFD523;
+    color: var(--yellow);
+    font-family: 'alliance', sans-serif;
+    font-weight: 400;
+    font-size: 1.5em;
+    margin-right: 3vw;
 }

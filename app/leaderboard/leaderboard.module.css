@@ -1,0 +1,22 @@
+.table {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.page {
+    background: linear-gradient(70deg,var(--primary) 39%,var(--teritiary) 99%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 75vh;
+    width: 80vw;
+    padding: 15vh 10vw 10vh 10vw;
+}

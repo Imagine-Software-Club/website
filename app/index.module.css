@@ -1,0 +1,104 @@
+.container {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.image {
+    height:30vw;
+    width:50%;
+}
+
+.mission {
+    flex: 1;
+    color: var(--accent);
+    width:100%;
+    font-size: 3em;
+    font-family: 'alliance', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    margin-right: 5vw;
+}
+
+.cardText {
+    flex: 1;
+    color: var(--accent);
+    width:100%;
+    font-size: 2em;
+    font-family: 'alliance', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    margin-right: 5vw;
+}
+
+
+.columns {
+    display: flex;
+    flex-direction: column;
+}
+
+.page {
+    background: linear-gradient(70deg,var(--primary) 39%,var(--teritiary) 99%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    width: 90vw;
+    padding: 5vh 5vw 5vh 5vw;
+}
+
+.pageCol {
+    background: linear-gradient(110deg,var(--primary) 39%,var(--teritiary) 99%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    width: 90vw;
+    padding: 5vh 5vw 5vh 5vw;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    gap: 10vw;
+}
+
+
+.headerTitle {
+    padding:5vh;
+    background: radial-gradient(ellipse at center, var(--yellow) 0, var(--darkGray) 45%, var(--yellow) 95%);
+    background-size: 200% 200%;
+    background-position: 40%;
+    -webkit-background-clip:text;
+    -webkit-text-stroke-width: .001px;
+    -webkit-text-stroke-color: rgba(0,0,0,.2);
+    color:transparent;
+    font-size:2.5rem;
+    text-align:center;
+    transition: color .2s ease-in-out;
+    font-weight:900;
+    letter-spacing: 3px;
+    margin:0;
+}
+
+.headerTitle:hover {
+    animation: rainbow 10s linear infinite;
+}
+
+@keyframes rainbow { 
+    0%{background-position:0%}
+    25%{background-position:50%;text-shadow: 0px 0px 15px var(--yellow);}
+    50%{background-position:100%}
+    75%{background-position:150%}
+    100%{background-position:200%}
+
+}
+
+.cardColumns {
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+}
